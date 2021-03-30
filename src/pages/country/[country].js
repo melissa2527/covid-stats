@@ -49,7 +49,7 @@ const Country = ({country}) => {
                   <p><span className={styles.info_label}>
                     Current Critical: </span>{country.critical.toLocaleString()}
                   </p>
-              ` </div>
+               </div>
                
                 <div className={styles.stats_daily}>
                   <p><span className={styles.info_label}>
