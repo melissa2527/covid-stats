@@ -90,7 +90,7 @@ const CountriesTable = ({countries}) => {
                         </div>
 
                         <div className={styles.info_column} 
-                            style={{background: country.todayDeaths !== 0 ? 'red' : null}}>
+                            style={{background: country.todayDeaths !== 0 ? 'red' : null, color: country.todayDeaths !== 0 ? '#fff' : null}}>
                             {country.todayDeaths !== 0 ? 
                             '+' + country.todayDeaths.toLocaleString() : null}
                         </div>

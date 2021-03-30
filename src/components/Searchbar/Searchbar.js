@@ -9,7 +9,9 @@ const Searchbar = ({...rest}) => {
                 <input className={styles.searchbar} {...rest} />
                 <SearchRounded className={styles.icon}/>
             </div>
-            <div className={styles.searchbar_info}>See basic information about countries below.  Click on <strong>Country</strong> or <strong>Total Cases</strong> labels to change direction.  Click on a <em>specific country</em> for more detailed information.</div>
+            <div className={styles.searchbar_info}>
+                See basic information about countries below.  Click on <strong>Country</strong> or <strong>Total Cases</strong> labels to change direction.  Click on a <em>specific country</em> for more detailed information.
+            </div>
         </div>
     )
 }
