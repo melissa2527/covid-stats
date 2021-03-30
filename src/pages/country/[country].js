@@ -76,7 +76,6 @@ const Country = ({country}) => {
                 </div>
 
               </div>
-            {/* </div> */}
         </div>
       </Layout>
     )
