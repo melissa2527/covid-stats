@@ -85,7 +85,7 @@ const CountriesTable = ({countries}) => {
                     
                         <div className={styles.info_column} 
                             id={styles.info_new_cases}
-                            style={{background: country.todayRecovered !== 0 ? 'lightyellow' : null}}>
+                            style={{background: country.todayCases !== 0 ? 'lightyellow' : null}}>
                             {country.todayCases !== 0 ? 
                             '+' + country.todayCases.toLocaleString() : null}
                         </div>
