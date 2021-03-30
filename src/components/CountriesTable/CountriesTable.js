@@ -13,27 +13,12 @@ import Link from 'next/link';
     return countries;
 }
 
+
 const CountriesTable = ({countries}) => {
     const [order, setOrder] = useState();
     const [value, setValue] = useState();
-    // const [showRows, setShowRows] = useState(true);
 
-    // const isShowRows = () => {
-    //     if(window.innerWidth <= 960) {
-    //         setShowRows(false)
-    //     } else {
-    //         setShowRows(true)
-    //     }
-    // }
-
-    // useEffect(() => {
-    //     isShowRows();
-    // }, []);
-
-    //     window.addEventListener('', isShowRows);
-
-
-    const orderList = orderBy(countries, order, value)
+    const orderList = orderBy(countries, value, order);
 
     const switchOrder = () => {
         if (!order) {

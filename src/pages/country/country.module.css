@@ -1,17 +1,65 @@
+@media screen and (min-width: 900px) {
+    .container {
+        display: flex;
+        width: 80vw;
+        justify-content: space-around;
+        /* align-items: center; */
+    }
+
+    .info_container {
+        width: 450px;
+        height: 380px;
+        margin: 0 auto;
+    }
+
+    .image_container {
+        background-color: rgb(235, 230, 236);
+        width: 450px;
+        height: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 2.7rem;
+    }
+    
+    .sub_title {
+        text-align: center;
+        margin-top: -1rem;
+        font-size: 1.3rem;
+    }
+    
+    .population {
+        text-align: center;
+        font-size: 1.3rem;
+        background-color: rgb(235, 230, 236);
+        width: 400px;
+        margin: 0 auto;
+        padding: 0.5rem;
+    }
+    
+    .stats_container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -3.5rem;
+    }
+    
+    .stats {
+        font-size: 1.1rem; 
+        margin: 0 2rem;
+    }
+    
+    .stats_daily {
+        font-size: 1.1rem;
+    }
+}
+
 .info_label {
     font-weight: bolder;
-}
-/* .container {
-    margin: 2rem;
-} */
-.image_container {
-    background-color: rgb(235, 230, 236);
-    width: 450px;
-    height: 280px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
 }
 
 .image {
@@ -20,42 +68,7 @@
     justify-content: center;
 }
 
-.title {
-    text-align: center;
-    font-size: 2.5rem;
-}
-
-.sub_title {
-    text-align: center;
-    margin-top: -1rem;
-    font-size: 1.25rem;
-}
-
-.population {
-    text-align: center;
-    font-size: 1rem;
-    background-color: rgb(235, 230, 236);
-    width: 400px;
-    margin: 0 auto;
-    padding: 0.5rem;
-}
-
-.stats_container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: -3.5rem;
-}
-
-.stats {
-    font-size: 0.9rem; 
-    margin: 0 2rem;
-}
-
-.stats_daily {
-    font-size: 0.9rem;
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .image_container {
         background-color: rgb(235, 230, 236);
         width: 450px;
@@ -95,12 +108,12 @@
     .stats_container {
         display: flex;
         justify-content: center;
-        margin-bottom: -3.5rem;
+        /* margin-bottom: 1rem; */
     }
     
     .stats {
         font-size: 0.9rem; 
-        margin: 0 1rem;
+        margin: 0 1rem 1rem 0;
     }
     
     .stats_daily {
