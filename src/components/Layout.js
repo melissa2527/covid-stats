@@ -1,13 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Head from 'next/head';
 import styles from './Layout.module.scss';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import Link from 'next/link';
+import Brightness4Icon from '@material-ui/icons/Brightness4';
 
 
 const Layout = ({children, title="Covid Stats"}) => {
+    // const [theme, setTheme] = useState('light');
+
+    // const switchTheme = () => {
+    //     if (theme === 'light') {
+    //         setTheme('dark');
+    //         document.documentElement.setAttribute('data-theme', 'dark')
+    //     } else {
+    //         setTheme('light');
+    //         document.documentElement.setAttribute('data-theme', 'light')
+    //     }
+    // }
+
     return (
         <div className={styles.container}>
             <Head>
@@ -17,7 +30,12 @@ const Layout = ({children, title="Covid Stats"}) => {
 
             <header className={styles.header}></header>
 
+            
+
             <main className={styles.main}>
+            {/* <button className={styles.themeSwitcher} onClick={switchTheme}>
+                <Brightness4Icon />
+            </button> */}
                 {children}
             </main>
 

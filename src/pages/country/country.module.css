@@ -1,3 +1,41 @@
 .info_label {
-    font-weight: 600;
+    font-weight: bolder;
+}
+.container {
+    margin: 2rem;
+}
+.image_container {
+    background-color: rgb(235, 230, 236);
+    width: 450px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.sub_title {
+    text-align: center;
+    margin-top: -1rem;
+    font-size: 1.5rem;
+}
+
+.population {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.stats {
+    display: flex;
 }

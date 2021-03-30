@@ -4,6 +4,7 @@ import CountriesTable from '../components/CountriesTable/CountriesTable';
 import Banner from '../components/Banner/Banner';
 import Searchbar from '../components/Searchbar/Searchbar';
 import Highlights from '../components/Highlights/Highlights';
+// import fetch from 'isomorphic-unfetch';
 
 
 export default function Home({countries}) {
@@ -28,7 +29,8 @@ export default function Home({countries}) {
   )
 }
 
-export const getStaticProps = async () => {
+// updated regularly throughout the day
+export const getServerSideProps = async () => {
   const res = await fetch('https://corona.lmao.ninja/v2/countries')
 
   const countries = await res.json()

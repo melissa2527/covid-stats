@@ -1,8 +1,7 @@
 .container {
-    // height: 30vh;
-    // margin: 0;
     text-align: center;
     margin-bottom: 7rem;
+    margin-top: -3rem;
 }
 
 .image {
@@ -13,9 +12,9 @@
 .title {
     position: abolute;
     z-index: 10;
-    margin-top: -9rem;
+    margin-top: -10rem;
     color: #fff;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 @media screen and (orientation: portrait) {

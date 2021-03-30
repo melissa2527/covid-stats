@@ -12,16 +12,16 @@ const Highlights = ({countries}) => {
     const totalDeaths = countries.map(c => c.deaths).reduce((max, cur) => max + cur)
     return (
         <div className={styles.container}>
-            <div>
+            <div className={styles.text}>
                 <strong>Total Worldwide Cases:</strong> {totalCases.toLocaleString()}
             </div>
-            <div>
+            <div className={styles.text}>
                 <strong>Total Active Cases:</strong> {totalActive.toLocaleString()}
             </div>
-            <div>
+            <div className={styles.text}>
                 <strong>Total Recovered Cases:</strong> {totalRecovered.toLocaleString()}
             </div>
-            <div>
+            <div className={styles.text}>
                 <strong>Total Deaths:</strong> {totalDeaths.toLocaleString()}
             </div>
         </div>

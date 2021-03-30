@@ -16,21 +16,21 @@ import Link from 'next/link';
 const CountriesTable = ({countries}) => {
     const [order, setOrder] = useState();
     const [value, setValue] = useState();
-    const [showRows, setShowRows] = useState(true);
+    // const [showRows, setShowRows] = useState(true);
 
-    const isShowRows = () => {
-        if(window.innerWidth <= 960) {
-            setShowRows(false)
-        } else {
-            setShowRows(true)
-        }
-    }
+    // const isShowRows = () => {
+    //     if(window.innerWidth <= 960) {
+    //         setShowRows(false)
+    //     } else {
+    //         setShowRows(true)
+    //     }
+    // }
 
-    useEffect(() => {
-        isShowRows();
-    }, []);
+    // useEffect(() => {
+    //     isShowRows();
+    // }, []);
 
-    // window.addEventListener('', isShowRows);
+    //     window.addEventListener('', isShowRows);
 
 
     const orderList = orderBy(countries, order, value)

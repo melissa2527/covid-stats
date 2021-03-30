@@ -1,6 +1,6 @@
 .container {
     margin: 0 2rem;
-    background-color:rgb(221, 212, 212);
+    background-color:rgb(235, 230, 236);
 
     .header_row {
         display: grid;
@@ -11,10 +11,11 @@
     #button {
         border: none;
         outline: none;
-        background-color:rgb(221, 212, 212);
+        background-color:rgb(235, 230, 236);
         font-size: 1rem;
         display: flex;
-        font-weight: 600;
+        justify-content: flex-start;
+        font-weight: bolder;
     }
 
     #button:hover {
@@ -44,7 +45,7 @@
     }
 
     #info_name {
-        font-weight: 600;
+        font-weight: bolder;
     }
 }
 
