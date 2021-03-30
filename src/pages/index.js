@@ -22,7 +22,7 @@ export default function Home({countries}) {
     <Layout>
       <Banner />
       <Highlights countries={countries} />
-      <Searchbar placeholder='Filter by Country' onChange={onInputChange}/>
+      <Searchbar placeholder='Search by Country' onChange={onInputChange}/>
       {/* <div className={styles.countries}>Found {countries.length} Countries</div>  */}
       <CountriesTable countries={filteredSearch}/>
     </Layout>
