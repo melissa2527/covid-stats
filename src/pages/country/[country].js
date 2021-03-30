@@ -6,9 +6,9 @@ import Layout from '../../components/Layout';
 const Country = ({country}) => {
     console.log(country)
     return (
-      <Layout>
+      <Layout >
         <div className={styles.container}>
-          <div className={styles.image_container}>
+          <div className={styles.image_container} >
              <Image
               className={styles.image}
               src={country.countryInfo.flag}
@@ -18,7 +18,7 @@ const Country = ({country}) => {
               />
             </div>
 
-            <div className={styles.info_container}>
+            <div className={styles.info_container} >
               <h1 className={styles.title}>{country.country}</h1>
               <h3 className={styles.sub_title}>{country.continent}</h3>
 

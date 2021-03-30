@@ -32,14 +32,14 @@ const Layout = ({children, title="Covid Stats"}) => {
 
             
 
-            <main className={styles.main}>
+            <main className={styles.main} >
             {/* <button className={styles.themeSwitcher} onClick={switchTheme}>
                 <Brightness4Icon />
             </button> */}
                 {children}
             </main>
 
-            <footer className={styles.footer}>
+            <footer className={styles.footer} >
                 <div className={styles.footer_items}>
                     <Link href='https://github.com/melissa2527' target='_blank'>
                         <GitHubIcon className={styles.footer_item}/>
@@ -55,7 +55,6 @@ const Layout = ({children, title="Covid Stats"}) => {
                 <div className={styles.footer_name}>
                     Melissa Genger - 2021
                 </div>
-                {/* {children} */}
             </footer>
         </div>
     )
