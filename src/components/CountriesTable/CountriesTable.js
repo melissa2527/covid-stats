@@ -84,7 +84,8 @@ const CountriesTable = ({countries}) => {
                         <div className={styles.info_column}>{country.cases.toLocaleString()}</div>
                     
                         <div className={styles.info_column} 
-                            id={styles.info_new_cases}>
+                            id={styles.info_new_cases}
+                            style={{background: country.todayRecovered !== 0 ? 'lightyellow' : null}}>
                             {country.todayCases !== 0 ? 
                             '+' + country.todayCases.toLocaleString() : null}
                         </div>
