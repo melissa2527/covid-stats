@@ -13,8 +13,8 @@ const Country = ({country}) => {
               className={styles.image}
               src={country.countryInfo.flag}
               alt={country.country}
-              width={400}
-              height={240}
+              width={380}
+              height={220}
               />
             </div>
 
@@ -32,6 +32,7 @@ const Country = ({country}) => {
                   </p>
               </div>
 
+              <div className={styles.stats_container}>
                 <div className={styles.stats}>
                   <p><span className={styles.info_label}>
                     Active Cases: </span>{country.active.toLocaleString()}
@@ -48,7 +49,7 @@ const Country = ({country}) => {
                   <p><span className={styles.info_label}>
                     Current Critical: </span>{country.critical.toLocaleString()}
                   </p>
-              `</div>
+              ` </div>
                
                 <div className={styles.stats_daily}>
                   <p><span className={styles.info_label}>
@@ -71,6 +72,7 @@ const Country = ({country}) => {
                     {country.todayRecovered !== 0 ? ' +' + country.todayRecovered : 0}
                     </span>
                   </p>
+                </div>
                 </div>
 
               </div>
