@@ -30,13 +30,6 @@ const Country = ({country}) => {
                   <p><span className={styles.info_label}>
                     Total Cases:</span> {country.cases.toLocaleString()}
                   </p>
-              </div>
-
-              <div className={styles.stats_container}>
-                <div className={styles.stats}>
-                  <p><span className={styles.info_label}>
-                    Active Cases: </span>{country.active.toLocaleString()}
-                  </p>
 
                   <p><span className={styles.info_label}>
                     Total Deaths: </span>{country.deaths.toLocaleString()}
@@ -45,9 +38,24 @@ const Country = ({country}) => {
                   <p><span className={styles.info_label}>
                     Total Recovered: </span>{country.recovered.toLocaleString()}
                   </p>
+              </div>
+
+              <div className={styles.stats_container}>
+                <div className={styles.stats}>
+                  <p><span className={styles.info_label}>
+                    Current Active Cases: </span>{country.active.toLocaleString()}
+                  </p>
 
                   <p><span className={styles.info_label}>
                     Current Critical: </span>{country.critical.toLocaleString()}
+                  </p>
+
+                  <p><span className={styles.info_label}>
+                    Current Cases Per Million: </span>{country.activePerOneMillion.toLocaleString()}
+                  </p>
+
+                  <p><span className={styles.info_label}>
+                    Tests Per Million: </span>{country.testsPerOneMillion.toLocaleString()}
                   </p>
                </div>
                
